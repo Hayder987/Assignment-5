@@ -56,12 +56,12 @@
      <!-- btn-section -->
      <section class="px-6 mb-12 py-6 md:px-36 bg-bg-color flex justify-center sticky top-[132px] z-60 ">
         <div class="flex gap-4 pt-10 pb-4">
-            <button id="" class="border-2 bg-btn-bg border-gray-400 px-8 py-4 rounded-lg text-xl font-semibold">Donation</button>
-            <button id="" class="border-2 border-gray-400 px-8 py-4 rounded-lg text-xl font-semibold">History</button>
+            <button id="donationBtn" class=" bg-btn-bg px-8 py-4 rounded-lg text-xl font-semibold">Donation</button>
+            <button id="historyBtn" class="border-2 border-gray-400 px-8 py-4 rounded-lg text-xl font-semibold">History</button>
         </div>
     </section>
     <!-- card-section -->
-     <section class="px-6 flex flex-col gap-8 py-6 md:px-36 ">
+     <div id="donationSection" class="px-6 flex flex-col gap-8 py-6 md:px-36 ">
         <!----- card-1 ---------------------->
         <card id="" class="flex flex-col border-2 p-6 rounded-2xl md:flex-row gap-16">
           <div class="w-full md:w-6/12 ">
@@ -156,19 +156,20 @@
                 </div>
             </div>
           </card>
-     </section>
+     </div>
      <!----- History section -------------->
-     <section class="px-6 mb-12 py-6 md:px-36">
-        <div class="">
+     <div id="historySection" class="hidden px-6 mb-12 py-6 md:px-36 ">
+        <div class="p-6">
           <h1 class="text-3xl">Historey </h1>
         </div>
-     </section>
+     </div>
  </main>
  <!-------------- footer-section start -------------------->
  <footer class="bg-nav-bar-bg p-20">
    
  </footer>
-
+    
+    <script src="./js/utility.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
