@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" data-theme = "light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <!-- google-font added -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+     <!-- Daisy Ui And Tailwind Css CDN added -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <!-- font-Awsome CDN -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                "nav-bar-bg" : "rgb(242, 237, 237)",
+                "btn-bg" : "rgb(180, 244, 97)",
+                "btn2-bg" : "rgba(17, 17, 17, 0.05)",
+                "para-color" : "rgba(17, 17, 17, 0.7)",
+                "bg-color" : "rgba(255, 255, 255, 0.856)"
+              }
+            }
+          }
+        }
+      </script>
+
+    <style>
+        .lexend{
+          font-family: "Lexend", sans-serif;
+        }
+       
+    </style>
+
+</head>
+<body class="lexend scroll-smooth">
+<!-------------- header-section start -------------------->
+ <header class="px-6 py-6 md:px-36 bg-nav-bar-bg sticky top-0 z-50 ">
+   <!-- nav-bar  -->
+   <nav class="flex justify-between items-center pb-8 bg-nav-bar-bg">
+    <button id="homeBtn" class="text-xl font-semibold bg-btn-bg px-6 py-3 rounded-lg" >Home</button>
+    <div class="flex justify-center items-center gap-4">
+        <img src="./assets/logo.png" alt="">
+        <h1 class="hidden md:flex text-xl font-semibold">Donate Bangladesh</h1>
+    </div>
+    <div class="flex justify-center items-center gap-2">
+        <img src="./assets/coin.png" alt="">
+        <h3 class="flex gap-2 text-xl font-semibold"><span>5500</span> BDT</h3>
+    </div>
+</nav>  
+ </header>
+ <!-------------- main-section start -------------------->
+ <main class="my-20 px-6 py-6 md:px-36">
+      <div class="py-12 px-4">
+        <h1 class="text-4xl font-bold">Important FAQ <span><i class="fa-regular fa-circle-question "></i></span></h1>
+      </div>
+      <div class="collapse collapse-arrow">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title text-2xl font-medium">What is the Document Object Model (DOM)?</div>
+        <div class="collapse-content">
+          <p class="text-para-color">The Document Object Model (DOM) is the data representation of the objects that comprise the structure and content of a document on the web.</p>
+        </div>
+      </div>
+
+      <div class="collapse collapse-arrow">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title text-2xl font-medium">How do you select an element from the DOM?</div>
+        <div class="collapse-content">
+          <p class="text-para-color">To select an element from the DOM, you use JavaScript methods that allow you to target elements based on specific characteristics like their ID, class, tag name, even more complex CSS selectors. For example, you can pick a single element using its unique ID, select multiple elements that share the same class, choose elements based on their tag, like a . There are also methods to select all elements that match a certain pattern, or just the first one that does. Once selected, these elements can be manipulated or styled using JavaScript.</p>
+        </div>
+      </div>
+
+      <div class="collapse collapse-arrow ">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title text-2xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+        <div class="collapse-content">
+          <p class="text-para-color">Event delegation in the context of the DOM refers to a technique where you attach a single event listener to a parent element rather than to multiple child elements. This listener will take advantage of event bubbling, a process where events triggered on child elements propagate (or "bubble up") to their parent elements. Using this approach, the parent can handle events triggered by its child elements.</p>
+        </div>
+      </div>
+
+      <div class="collapse collapse-arrow ">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title text-2xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+        <div class="collapse-content">
+          <p class="text-para-color">Get an Attribute: To retrieve the value of an attribute from an element.
+            Set an Attribute: To add or change the value of an attribute.
+            Remove an Attribute: To completely remove an attribute from an element.
+            Change Inline Styles: You can modify an element's inline CSS styles directly by accessing its style property. This allows you to set or change specific CSS properties, such as color, font-size, background-color, etc.
+        </p>
+        </div>
+      </div>
+      
+      
+ </main>
+ <!-------------- footer-section start -------------------->
+ 
+
+    <script src="./js/blog.js"></script>
+</body>
+</html>
