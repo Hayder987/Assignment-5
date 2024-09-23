@@ -47,7 +47,7 @@
     </div>
     <div class="flex justify-center items-center gap-2">
         <img src="./assets/coin.png" alt="">
-        <h3 class="flex gap-2 text-xl font-semibold"><span>5500</span> BDT</h3>
+        <h3 class="flex gap-2 text-xl font-semibold"><span id="totalAmount">5500</span> BDT</h3>
     </div>
 </nav>  
  </header>
@@ -70,7 +70,7 @@
           <div class="w-full md:w-6/12 ">
             <button class="flex text-xl mb-4 font-medium justify-center item-center gap-2 bg-btn2-bg py-3 px-4 rounded-lg">
                 <img src="./assets/coin.png" alt="">
-                <p class="">560</p>
+                <p id="currentDonation1-text" class="">560</p>
                 <h4 class="">BDT</h4>
             </button>
             <h3 class="text-xl font-bold mb-6">Donate for Flood at Noakhali, Bangladesh</h3>
@@ -81,17 +81,17 @@
                 The ministry said on Friday that nearly 190,000 people were taken to emergency relief shelters and 11 of the country’s 64 districts were affected by the flooding.
                 
                  The recent floods in Noakhali </p>
-
-            <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mb-6 " />
-            <a href="#my_modal_8"><button id="" class="w-full text-xl font-semibold bg-btn-bg px-6 py-3 rounded-lg" >Donate Now</button></a>
+                 <!-- href="#my_modal_8" -->
+            <input id="card1Input" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mb-6 " autocomplete="off" />
+            <a id="modal1" ><button id="card1btn" class="w-full text-xl font-semibold bg-btn-bg px-6 py-3 rounded-lg" >Donate Now</button></a>
             <div class="modal" role="dialog" id="my_modal_8">
                 <div class="modal-box flex flex-col justify-center items-center">
                   <h1 class="text-4xl font-extrabold mb-4">Congrates!</h1>
                   <img class="w-14 mb-6" src="./assets/coin.png" alt="">
-                  <p class="py-4 text-xl font-medium text-para-color">You Have Donated for Humankind </p>
+                  <p id="modal1-p-text" class="py-4 text-xl font-medium text-para-color">You Have Donated for Humankind </p>
                   <h3 class="text-2xl font-bold">Successfully</h3>
                   <div class="modal-action flex justify-center items-center">
-                    <a href="#" class="btn">close confirmation</a>
+                    <a href="#" id="confirmBtn1" class="btn ">close confirmation</a>
                   </div>
                 </div>
               </div>
@@ -99,63 +99,42 @@
         </card>
         <!----- card-2 ---------------------->
         <card id="" class="flex flex-col border-2 p-6 rounded-2xl md:flex-row gap-16">
-            <div class="w-full md:w-6/12 ">
-              <img src="./assets/feni.png" class="w-full" alt="">
-            </div>
-            <div class="w-full md:w-6/12 ">
-              <button class="flex text-xl mb-4 font-medium justify-center item-center gap-2 bg-btn2-bg py-3 px-4 rounded-lg">
-                  <img src="./assets/coin.png" alt="">
-                  <p class="">760</p>
-                  <h4 class="">BDT</h4>
-              </button>
-              <h3 class="text-xl font-bold mb-6">Donate for Flood Relief in Feni,Bangladesh</h3>
-              <p class="text-base text-para-color mb-8">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
-  
-              <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mb-6 " />
-              <a href="#my_modal_8"><button id="" class="w-full text-xl font-semibold bg-btn-bg px-6 py-3 rounded-lg" >Donate Now</button></a>
-              <div class="modal" role="dialog" id="my_modal_8">
-                  <div class="modal-box flex flex-col justify-center items-center">
-                    <h1 class="text-4xl font-extrabold mb-4">Congrates!</h1>
-                    <img class="w-14 mb-6" src="./assets/coin.png" alt="">
-                    <p class="py-4 text-xl font-medium text-para-color">You Have Donated for Humankind </p>
-                    <h3 class="text-2xl font-bold">Successfully</h3>
-                    <div class="modal-action flex justify-center items-center">
-                      <a href="#" class="btn">close confirmation</a>
-                    </div>
-                  </div>
-                </div>
-            </div>
-          </card>
+          <div class="w-full md:w-6/12 ">
+            <img src="./assets/feni.png" class="w-full" alt="">
+          </div>
+          <div class="w-full md:w-6/12 ">
+            <button class="flex text-xl mb-4 font-medium justify-center item-center gap-2 bg-btn2-bg py-3 px-4 rounded-lg">
+                <img src="./assets/coin.png" alt="">
+                <p id="currentDonation2-text" class="">960</p>
+                <h4 class="">BDT</h4>
+            </button>
+            <h3 class="text-xl font-bold mb-6">Donate for Flood Relief in Feni,Bangladesh</h3>
+            <p class="text-base text-para-color mb-8">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need. </p>
+                 <!-- href="#my_modal_8" -->
+            <input id="card2Input" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mb-6 " autocomplete="off" />
+            <a id="modal2" ><button id="card2btn" class="w-full text-xl font-semibold bg-btn-bg px-6 py-3 rounded-lg" >Donate Now</button></a>
+            
+          </div>
+        </card>
         <!----- card-3 ---------------------->
         <card id="" class="flex flex-col border-2 p-6 rounded-2xl md:flex-row gap-16">
-            <div class="w-full md:w-6/12 ">
-              <img src="./assets/quota-protest.png" class="w-full" alt="">
-            </div>
-            <div class="w-full md:w-6/12 ">
-              <button class="flex text-xl mb-4 font-medium justify-center item-center gap-2 bg-btn2-bg py-3 px-4 rounded-lg">
-                  <img src="./assets/coin.png" alt="">
-                  <p class="">2400</p>
-                  <h4 class="">BDT</h4>
-              </button>
-              <h3 class="text-xl font-bold mb-6">Aid for Injured in the Quota Movement</h3>
-              <p class="text-base text-para-color mb-8">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
-              
-  
-              <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mb-6 " />
-              <a href="#my_modal_8"><button id="" class="w-full text-xl font-semibold bg-btn-bg px-6 py-3 rounded-lg" >Donate Now</button></a>
-              <div class="modal" role="dialog" id="my_modal_8">
-                  <div class="modal-box flex flex-col justify-center items-center">
-                    <h1 class="text-4xl font-extrabold mb-4">Congrates!</h1>
-                    <img class="w-14 mb-6" src="./assets/coin.png" alt="">
-                    <p class="py-4 text-xl font-medium text-para-color">You Have Donated for Humankind </p>
-                    <h3 class="text-2xl font-bold">Successfully</h3>
-                    <div class="modal-action flex justify-center items-center">
-                      <a href="#" class="btn">close confirmation</a>
-                    </div>
-                  </div>
-                </div>
-            </div>
-          </card>
+          <div class="w-full md:w-6/12 ">
+            <img src="./assets/quota-protest.png" class="w-full" alt="">
+          </div>
+          <div class="w-full md:w-6/12 ">
+            <button class="flex text-xl mb-4 font-medium justify-center item-center gap-2 bg-btn2-bg py-3 px-4 rounded-lg">
+                <img src="./assets/coin.png" alt="">
+                <p id="currentDonation3-text" class="">1500</p>
+                <h4 class="">BDT</h4>
+            </button>
+            <h3 class="text-xl font-bold mb-6">Aid for Injured in the Quota Movement</h3>
+            <p class="text-base text-para-color mb-8">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need. </p>
+                 <!-- href="#my_modal_8" -->
+            <input id="card3Input" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mb-6 " autocomplete="off" />
+            <a id="modal3" ><button id="card3btn" class="w-full text-xl font-semibold bg-btn-bg px-6 py-3 rounded-lg" >Donate Now</button></a>
+            
+          </div>
+        </card>
      </div>
      <!----- History section -------------->
      <div id="historySection" class="hidden px-6 mb-12 py-6 md:px-36 ">
