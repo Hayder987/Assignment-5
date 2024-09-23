@@ -46,6 +46,31 @@ function dataCalculation (input, totalAmount, donationAmount, eachDonate){
    document.getElementById("totalAmount").innerText = restTotal;
    document.getElementById(eachDonate).innerHTML = totalDonation;
 
+};
 
+function historyDisplay(donateMoney, historyHeading){
+  
+  let historyCardDiv = document.getElementById("historyCardDiv");
+
+        let cardDiv = document.createElement("div");
+        cardDiv.classList.add("border-2", "p-8","rounded-xl","flex","flex-col", "gap-6");
+        
+        const date = new Date();
+        const day = date.toDateString().split(' ')[0];
+        const month = date.toDateString().split(' ')[1];
+        const dayNum = date.getDate();
+        const year = date.getFullYear();
+        const time = date.toTimeString().split(' ')[0]; 
+        const timezone = date.toTimeString().split(' ')[1].replace(/[()]/g, ''); 
+        const fullDate = `${day} ${month} ${dayNum} ${year} ${time} ${timezone}`;
+
+        const card1Heading = document.getElementById(historyHeading).innerText;
+
+        cardDiv.innerHTML = `
+        <h1 class="text-xl font-bold">${donateMoney} Taka is ${card1Heading} </h1>
+         <h3 class="">Date : ${fullDate}</h3>
+        `
+
+        historyCardDiv.appendChild(cardDiv)
 
 };
