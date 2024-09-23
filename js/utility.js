@@ -70,7 +70,7 @@ function historyDisplay(donateMoney, historyHeading){
         <h1 class="text-xl font-bold">${donateMoney} Taka is ${card1Heading} </h1>
          <h3 class="">Date : ${fullDate}</h3>
         `
-
+        document.getElementById("historyImgDiv").classList.add("hidden");
         historyCardDiv.appendChild(cardDiv)
 
 };
