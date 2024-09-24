@@ -56,6 +56,15 @@ function dataCalculation (input, totalAmount, donationAmount, eachDonate){
 
 };
 
+function modalControl (id){
+
+     document.getElementById(id).setAttribute("href", "#my_modal_8");
+     document.getElementById("confirmBtn1").addEventListener("click", function(){
+     document.getElementById(id).removeAttribute("href"); 
+  });
+};
+
+
 function historyDisplay(donateMoney, historyHeading){
   
   let historyCardDiv = document.getElementById("historyCardDiv");
@@ -80,5 +89,4 @@ function historyDisplay(donateMoney, historyHeading){
         `
         document.getElementById("historyImgDiv").classList.add("hidden");
         historyCardDiv.appendChild(cardDiv)
-
 };

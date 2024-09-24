@@ -22,20 +22,13 @@ document.getElementById("card1btn").addEventListener("click", function(){
         alert("Wrong Input Please Enter Correct Value");
         return ;
     }
-    else{
-       
+    else{ 
         dataCalculation (inputValue1, TotalAmount, currentDonation1, "currentDonation1-text" ) ;
-        document.getElementById("modal1").setAttribute("href", "#my_modal_8");
-
         historyDisplay(inputValue1, "card1Heading")
 
         document.getElementById("modal1-p-text").innerText = `You Have Donated $ ${inputValue1} for Humankind `
-        
-        document.getElementById("confirmBtn1").addEventListener("click", function(){
-            document.getElementById("modal1").removeAttribute("href"); 
-        })
-    }
-      
+        modalControl("modal1");
+    }      
 });
 
 
@@ -48,20 +41,13 @@ document.getElementById("card2btn").addEventListener("click", function(){
         alert("Wrong Input Please Enter Correct Value");
         return ;
     }
-    else{
-       
+    else{  
         dataCalculation (inputValue2, TotalAmount, currentDonation2, "currentDonation2-text" ) ;
-        document.getElementById("modal2").setAttribute("href", "#my_modal_8");
- 
         historyDisplay(inputValue2, "card2Heading")
 
         document.getElementById("modal1-p-text").innerText = `You Have Donated $ ${inputValue2} for Humankind `
-        
-        document.getElementById("confirmBtn1").addEventListener("click", function(){
-            document.getElementById("modal2").removeAttribute("href"); 
-        })
-    }
-      
+        modalControl("modal2");
+    }    
 });
 
 
@@ -75,17 +61,11 @@ document.getElementById("card3btn").addEventListener("click", function(){
         return ;
     }
     else{
-       
         dataCalculation (inputValue3, TotalAmount, currentDonation3, "currentDonation3-text" ) ;
-        document.getElementById("modal3").setAttribute("href", "#my_modal_8");
 
         historyDisplay(inputValue3, "card3Heading")
 
         document.getElementById("modal1-p-text").innerText = `You Have Donated $ ${inputValue3} for Humankind `
-        
-        document.getElementById("confirmBtn1").addEventListener("click", function(){
-            document.getElementById("modal3").removeAttribute("href"); 
-        })
-    }
-      
+        modalControl("modal3");
+    }    
 });
