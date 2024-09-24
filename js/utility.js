@@ -21,8 +21,16 @@ function btnManipulation(id){
 
 
 function getInputValue (id){
-     let getInputValue = document.getElementById(id);
-     let   inputValue = getInputValue.value
+     let getInputValue = document.getElementById(id);     
+     let getString =getInputValue.value;
+
+     for(let item of getString){
+       if(isNaN(item)){
+        getInputValue.value = "";
+        return;
+       }
+     };
+     let inputValue = getInputValue.value
      let getInputValueNumber = parseFloat(inputValue); 
      getInputValue.value ='';
 

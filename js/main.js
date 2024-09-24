@@ -17,6 +17,7 @@ document.getElementById("card1btn").addEventListener("click", function(){
     let inputValue1 = getInputValue("card1Input");
     let TotalAmount = getTextValue ("totalAmount");
     let currentDonation1 = getTextValue ("currentDonation1-text");
+    
     if(isNaN(inputValue1) || TotalAmount<inputValue1 || inputValue1<0){
         alert("Wrong Input Please Enter Correct Value");
         return ;
